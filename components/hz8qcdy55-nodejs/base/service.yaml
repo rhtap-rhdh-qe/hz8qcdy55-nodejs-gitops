@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: hz8qcdy55-nodejs
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: hz8qcdy55-nodejs 
+  name: hz8qcdy55-nodejs
+spec:
+  ports:
+  - port: 3001 
+    targetPort: 3001 
+  selector:
+    app.kubernetes.io/instance: hz8qcdy55-nodejs 
